@@ -1,8 +1,8 @@
-from database import sessionLocal
+from database import SessionLocal
 
 
 def get_db():
-    db = sessionLocal()
+    db = SessionLocal()
     try:
         yield db
     finally:
